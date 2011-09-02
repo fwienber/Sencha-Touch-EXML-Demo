@@ -6,10 +6,11 @@
     <items>
       <form>
         <items>
-          <fieldset title="Person">
+          <fieldset title="Simple form using Sencha Touch">
             <items>
               <textfield label="Name" placeHolder="Enter Your Name"/>
               <datepickerfield label='Birthday'></datepickerfield>
+              <checkboxfield label="Like it?" />
             </items>
           </fieldset>
         </items>
