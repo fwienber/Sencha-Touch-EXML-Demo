@@ -2,12 +2,25 @@
 <exml:component xmlns:exml="http://www.jangaroo.net/exml/0.8"
                 xmlns="exml:ext.config"
                 xmlns:local="exml:com.sencha.touch.examples.tabs.config">
+  <exml:import class="com.coremedia.cap.common.session"/>
+  <exml:cfg name="user" type="String"/>
+
   <setup icon="icon.png"
          glossOnIcon="false"
          tabletStartupScreen="tablet_startup.png"
          phoneStartupScreen="phone_startup.png">
     <main>
-      <local:tabs/>
+      <panel fullscreen='true'
+             ui='dark'>
+        <items>
+          <button text="{'logout ' + config.user}" handler="{function():void { session.close(function():void { window.location.reload(); }); } }"/>
+          <button text='Something else'/>
+          <button text='more functions'/>
+        </items>
+        <layout>
+          <hboxlayout pack="center" align="start"/>
+        </layout>
+      </panel>
     </main>
   </setup>
 

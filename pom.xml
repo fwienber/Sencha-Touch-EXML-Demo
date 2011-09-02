@@ -92,6 +92,7 @@
         <configuration>
           <webAppConfig>
             <defaultsDescriptor>webdefault.xml</defaultsDescriptor>
+            <overrideDescriptor>override-web.xml</overrideDescriptor>
           </webAppConfig>
           <webAppSourceDirectory>${project.build.directory}/${project.artifactId}-${project.version}</webAppSourceDirectory>
           <stopKey>STOPME</stopKey>
@@ -120,6 +121,28 @@
       <version>${jangaroo_libs_version}</version>
       <type>jangaroo</type>
     </dependency>
+
+    <dependency>
+      <groupId>com.coremedia.ui.sdk</groupId>
+      <artifactId>cap-rest-client</artifactId>
+      <version>1.2.1-SNAPSHOT</version>
+      <type>jangaroo</type>
+    </dependency>
+
+    <dependency>
+      <groupId>com.coremedia.ui.sdk</groupId>
+      <artifactId>cap-rest-client-impl</artifactId>
+      <version>1.2.1-SNAPSHOT</version>
+      <type>jangaroo</type>
+      <scope>runtime</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.eclipse.jetty</groupId>
+      <artifactId>jetty-servlets</artifactId>
+      <version>${jetty_version}</version>
+    </dependency>
+
   </dependencies>
 
 </project>

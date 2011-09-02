@@ -15,6 +15,7 @@
       <tab u:title='Tab 3'
           html='Three'
           cls='card3'/>
+      <button/>
     </items>
   </tabpanel> 
 </exml:component>

@@ -1,0 +1,15 @@
+{
+  "connection":                                                  "com.coremedia.cap.common.impl.CapConnectionImpl",
+  "loginService":                                                "com.coremedia.cap.common.impl.CapLoginServiceImpl",
+  "loginService/retrieve":                                       "com.coremedia.cap.common.impl.CapSessionImpl",
+  "content":                                                     "com.coremedia.cap.content.impl.ContentRepositoryImpl",
+  "content/{id:[0-9]+}":                                         "com.coremedia.cap.content.impl.ContentImpl",
+  "content/{id:[0-9]+}#properties.{property:[A-Za-z0-9_]+}":     "com.coremedia.cap.content.impl.ContentImpl",
+  "content/{id:[0-9]+}/properties":                              "com.coremedia.cap.content.impl.ContentPropertiesImpl",
+  "content/type/{id:[A-Za-z0-9_]+}":                             "com.coremedia.cap.content.impl.ContentTypeImpl",
+  "search?{query:.+}":                                           "com.coremedia.cap.content.search.impl.SearchResultImpl",
+  "suggestions?{query:.+}":                                      "com.coremedia.cap.content.search.impl.SuggestionResultImpl",
+  "user":                                                        "com.coremedia.cap.user.impl.UserRepositoryImpl",
+  "user/{id:[0-9]+}":                                            "com.coremedia.cap.user.impl.UserImpl",
+  "group/{id:[0-9]+}":                                           "com.coremedia.cap.user.impl.GroupImpl"
+}
