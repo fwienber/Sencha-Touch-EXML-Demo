@@ -6,10 +6,10 @@
     <items>
       <form>
         <items>
-          <fieldset title="Name">
+          <fieldset title="Person">
             <items>
               <textfield label="Name" placeHolder="Enter Your Name"/>
-              <datepickerfield label='Date'></datepickerfield>
+              <datepickerfield label='Birthday'></datepickerfield>
             </items>
           </fieldset>
         </items>
