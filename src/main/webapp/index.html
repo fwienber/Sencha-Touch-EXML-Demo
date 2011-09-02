@@ -18,6 +18,13 @@
 <body>
 <script type="text/javascript" src="joo/jangaroo-application.js"></script>
 <script type="text/javascript">
+  Ext.regModel('Contact', {
+    fields: ['firstName', 'lastName']
+});
+
+
+</script>
+<script type="text/javascript">
   joo.classLoader.run("com.sencha.touch.examples.tabs.Main");
 </script>
 </body>

@@ -1,20 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <exml:component xmlns:exml="http://www.jangaroo.net/exml/0.8"
                 xmlns="exml:ext.config"
-                xmlns:u="exml:untyped">
-  <tabpanel fullscreen='true'
-            ui='dark'
-            sortable='true'>
+                xmlns:u="exml:untyped"
+                xmlns:demo="exml:com.sencha.touch.examples.tabs.config">
+
+  <tabpanel fullscreen="true">
+
     <items>
-      <tab u:title='Tab 1'
-           html='One'
-           cls='card1'/>
-      <tab u:title='Tab 2'
-          html='Two'
-          cls='card2'/>
-      <tab u:title='Tab 3'
-          html='Three'
-          cls='card3'/>
+      <demo:cmTabPanelBase u:title="Overview"/>
+      <panel  u:title="Comment">
+        <items>
+          <carousel flex="5" >
+
+            <items>
+              <panel html="Hallo EOP!" cls="card card1" style="background-color:#dddddd">
+              </panel>
+
+              <panel html="Blog Krokers Look @ IT: Ist der Boom bei #Groupon Co. vorbei? - http://bit.ly" cls="card card1" style="background-color:#dddddd">
+              </panel>
+
+              <panel html="Enable or disable the component" cls="card card1" style="background-color:#dddddd">
+              </panel>
+
+
+              <panel html="BUILD SUCCESS" cls="card card1" style="background-color:#dddddd">
+              </panel>
+
+              <panel html="Enable or disable the component" cls="card card1" style="background-color:#dddddd">
+              </panel>
+
+              <panel html="BUILD SUCCESS" cls="card card1" style="background-color:#dddddd">
+              </panel>
+            </items>
+
+          </carousel>
+          <panel flex="1">
+            <items>
+              <button text="reject" flex="1" ui="decline"/>
+              <button text="accept" flex="1" ui="confirm"/>
+            </items>
+            <layout>
+              <hboxlayout align="strech"/>
+            </layout>
+          </panel>
+        </items>
+        <layout>
+          <vboxlayout align="strech"/>
+        </layout>
+      </panel>
+
     </items>
-  </tabpanel> 
+    <layout>
+      <vboxlayout align="strech"/>
+    </layout>
+  </tabpanel>
+
+
+  <!--<demo:cmTabPanelBase fullscreen='true'-->
+  <!--ui='dark'-->
+  <!--sortable='true'>-->
+  <!--<items>-->
+
+  <!--<panel u:title="tab1">-->
+  <!--<items>-->
+  <!--<button text="asdf" handler="{this.tracing}"/>-->
+
+
+  <!--<button text="asdaadf"/>-->
+  <!--</items>-->
+  <!--</panel>-->
+
+
+  <!--<panel u:title="tab2">-->
+  <!--<items>-->
+  <!--<button text="asdasdasdsadf"/>-->
+
+  <!--</items>-->
+  <!--</panel>-->
+
+
+  <!--</items>-->
+  <!--</demo:cmTabPanelBase>-->
 </exml:component>
